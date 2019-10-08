@@ -13,7 +13,7 @@ export async function getSubtitles({
   lang: 'en' | 'de' | 'fr' | void,
 }) {
   const { data } = await axios.get(
-    `https://youtube.com/get_video_info?video_id=${videoID}`
+    `https://limitlessx.herokuapp.com/https://youtube.com/get_video_info?video_id=${videoID}`
   );
 
   const decodedData = decodeURIComponent(data);
